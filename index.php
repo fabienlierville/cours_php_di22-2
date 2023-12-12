@@ -37,6 +37,7 @@ foreach ($arrayFruits as $index => $fruit){
 /* Exercice :  Créer un tableau $mois :
 - Clef = Nom du mois
 - Valeur = nb jour du mois
+*/
 
 $mois = array(
     "Janvier" => 31,
