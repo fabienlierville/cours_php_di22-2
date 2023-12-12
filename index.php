@@ -37,5 +37,34 @@ foreach ($arrayFruits as $index => $fruit){
 /* Exercice :  Créer un tableau $mois :
 - Clef = Nom du mois
 - Valeur = nb jour du mois
+*/
 
-Faire une boucle qui affiche les mois et leur valeur dans un tableau HTML (<table>)
+$mois = array(
+    "Janvier" => 31,
+    "Février" => 28,
+    "Mars" => 31,
+    "Avril" => 30,
+    "Mai" => 31,
+    "Juin" => 30,
+    "Juillet" => 31,
+    "Août" => 31,
+    "Septembre" => 30,
+    "Octobre" => 31,
+    "Novembre" => 30,
+    "Décembre" => 31
+);
+
+echo "<table border='1'>
+        <tr>
+            <th>Mois</th>
+            <th>Nombre de jours</th>
+        </tr>";
+
+foreach ($mois as $nomMois => $nbJours) {
+    echo "<tr>
+            <td>$nomMois</td>
+            <td>$nbJours</td>
+          </tr>";
+}
+
+echo "</table>";
